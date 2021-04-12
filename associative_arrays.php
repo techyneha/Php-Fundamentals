@@ -51,4 +51,10 @@ print_r($stuMarks);
 // array_map(callback, arr1)	||	array_walk(array, funcname i.e callback) :
 // 1.multipe array can accept 	|| 	single array can accept 
 // 2.It returns a new array     ||  It returns a existing array with modified values
-// 3.
+
+
+//array_count_values() example
+$arr1 = array(1, "hello", 1, "world", "hello");
+print_r($arr1);
+print_r(array_count_values($arr1));
+//Note:array_count_values() returns an array using the values of array as keys and their frequency in array as values. 
