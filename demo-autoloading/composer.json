@@ -1,0 +1,23 @@
+{
+    "name": "neha/demo-autoloading",
+    "authors": [
+        {
+            "name": "techyneha",
+            "email": "chaurasianeha98@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.14"
+    },
+
+    "autoload":{
+ 	   "classmap":[
+ 	   		"./src/app/commons/utils",
+ 	   		"./src/lib/com/advanceCal/utils"
+ 	   	],
+ 	   "psr-4": {
+ 	   		"app\\":"./src/app/",
+ 	   		"com\\advanceCal\\":"./src/lib/com/"
+ 	   }
+ 	}
+}
